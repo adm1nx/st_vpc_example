@@ -14,3 +14,14 @@ variable "availability_zones" {
   description = "Availability Zones"
   default     = ["us-east-1a", "us-east-1b"]
 }
+
+variable "web_server_count" {
+  type = number
+  description = "Number of web servers to create"
+  default = 2
+}
+
+variable "public_key" {
+  type = string
+  description = "Public SSH key"
+}
